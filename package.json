@@ -1,6 +1,6 @@
 {
   "name": "session-passport-info",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Express middleware session diagnostic that console.logs if user logged in and the current session info",
   "main": "lib/index.js",
   "scripts": {
