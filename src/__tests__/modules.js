@@ -6,3 +6,5 @@ export const cookieParser = require('cookie-parser');
 export const bodyParser = require('body-parser');
 export const compression = require('compression');
 export const info = require('../');
+export const passport = require('passport');
+export const LocalStrategy = require('passport-local');

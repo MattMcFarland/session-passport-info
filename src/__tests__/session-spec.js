@@ -6,7 +6,9 @@ import {
   compression,
   session,
   request,
+  passport,
   info
+
 } from './modules';
 
 
@@ -37,6 +39,8 @@ describe('=> Session Info', function () {
       resave: true,
       saveUninitialized: false
     }));
+    app.use(passport.initialize());
+    app.use(passport.session());
     app.use(info());
     app.get('/', (req, res) => {
       res.status(200).send('ok');
